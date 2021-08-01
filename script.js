@@ -12,7 +12,7 @@ let transswi=false;
 let url;
 
 function setup(){
-    createCanvas(1300,800);
+    createCanvas(1300,700);
     player=new Player();
     player.pos=new Vec2(7,-2.5);
     player.angle=0.0001;
@@ -56,10 +56,10 @@ function draw(){
         text("スタート",20,50);
     }
     noStroke();
-    text("左クリック：進む",800,630);
-    text("マウスホイール：回転",800,670);
-    text("mキー：マップの表示/非表示",800,710);
-    text("nキー：透過表示",800,750);
+    text("左クリック：進む",800,570);
+    text("マウスホイール：回転",800,610);
+    text("mキー：マップの表示/非表示",800,650);
+    text("nキー：透過表示",800,690);
 
     /*for(let i=0;i<wall.length;i++){
         wallc[i]=false;
@@ -106,7 +106,7 @@ function draw(){
                 dis[j]=8000/dis[j]/cos(PI/60*i);
                 
                 strokeWeight(15);
-                line(400+22*i,500-constrain(dis[j]/100,0,400),400+22*i,500+constrain(dis[j]/100,0,400))
+                line(400+22*i,450-constrain(dis[j]/100,0,400),400+22*i,450+constrain(dis[j]/100,0,400))
                 strokeWeight(1)
             }
         }
